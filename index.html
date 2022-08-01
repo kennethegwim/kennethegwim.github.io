@@ -9,6 +9,16 @@
     <title>My Portfolio</title>
 </head>
 <body>
+    <!-- Start Top Nav-->
+    <nav id="top-nav-bar" class="nav-bar top-nav">
+        <h1 class="logo"><a href="index.html">Kenneth Egwim-Nwagbara</a></h1>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <!-- End Top Nav-->
+
     <!--Begin Hero Header-->
     <header class="hero-box">
         <section class="hero-image-box"> 
@@ -26,8 +36,8 @@
     </header>
     <!--End Hero Header-->
 
-    <!--Start Portfolio-->
-<section id="portfolio" class="porfoilio-container">
+    <!-- Start Portfolio-->
+<section id="portfolio" class="porfoilio-container section-stop">
     <h1>Porfolio</h1>
     <section class="porfolio-gallery">
         <div class="gallery-item">
@@ -112,10 +122,10 @@
         </div>
     </section>
 </section>
-    <!--End Porfolio-->
+    <!-- End Porfolio-->
     
-    <!-- Begin About-->
-    <section class="about-container">
+    <!-- Start About-->
+    <section id="about" class="about-container section-stop">
         <section class="about-text">
             <h1>Kenneth Egwim-Nwagbara creates imaginative concepts</h1>
             <p>Exploring what works in conjucture with other things, I am to create images from my imagination.</p>
@@ -126,6 +136,25 @@
         </section>
     </section>
     <!-- End About-->
+
+    <!-- Start Footer-->
+    
+    <!-- End Footer-->
+
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("top-nav-bar").style.background = "black";
+            }
+            else {
+                document.getElementById("top-nav-bar").style.background = "none";
+            }
+        }
+    </script>
 
    <script src="js/glight.min.js"></script>
    <script type="text/javascript">
