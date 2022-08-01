@@ -132,6 +132,25 @@ video {
     transform: scale(1.5);
 }
 
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem auto 0 auto;
+}
+
+.about-text {
+    margin: 0 auto;
+}
+
+.about-text h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.about-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Add Media For Large Screens */
 
 @media (min-width: 600px) {
@@ -146,9 +165,18 @@ video {
     .hero-text-box {
         padding: 2rem;
     }
-    .portfolio-container h1 {
+    .portfolio-container h1, 
+    .about-text h1 {
         font-size: 3rem;
         line-height: 3rem;
+    }
+    .about-container {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+    .about-text p {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -157,11 +185,17 @@ video {
         font-size: 6rem;
         line-height: 6rem;
     }
-    .portfolio-container {
+    .portfolio-container, 
+    .about-container {
         max-width: 1400px;
     }
-    .porfolio-container h1 {
+    .porfolio-container h1, 
+    .about-text h1 {
         font-size: 4rem;
         line-height: 4rem;
+    }
+    .about-text-p {
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 }
